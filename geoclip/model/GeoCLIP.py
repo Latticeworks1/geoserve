@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F
+from datetime import datetime
 from .image_encoder import ImageEncoder
 from .location_encoder import LocationEncoder
 from .misc import load_gps_data, file_dir
