@@ -17,7 +17,6 @@ Usage:
     Use 'uvicorn geoclip.app:app' to run the server.
 """
 
-import os
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -175,6 +174,14 @@ def generate_heatmap(top_pred_gps, top_pred_prob):
 
     return m._repr_html_()
 
-if __name__ == "__main__":
+def create_app() -> FastAPI:
+    """Return the FastAPI application instance."""
+    return app
+
+def run_server(host: str = "0.0.0.0", port: int = 8000) -> None:
+    """Run the API using uvicorn."""
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host=host, port=port)
+
+if __name__ == "__main__":
+    run_server()
