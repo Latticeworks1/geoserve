@@ -17,7 +17,6 @@ Usage:
     Use 'uvicorn geoclip.app:app' to run the server.
 """
 
-import os
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles

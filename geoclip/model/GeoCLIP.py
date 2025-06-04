@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from datetime import datetime
 from .image_encoder import ImageEncoder
 from .location_encoder import LocationEncoder
-from .misc import load_gps_data, file_dir
+from .utils import load_gps_data, file_dir
 
 from PIL import Image
 import requests

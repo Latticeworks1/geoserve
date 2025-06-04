@@ -1,4 +1,0 @@
-"""GeoCLIP package initialization."""
-from .geo_clip import GeoCLIP
-
-__all__ = ['GeoCLIP']
