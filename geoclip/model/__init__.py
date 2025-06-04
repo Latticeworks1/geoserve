@@ -22,7 +22,7 @@ Example usage:
 For more advanced usage, refer to the documentation of individual modules.
 """
 
-from .geoclip import GeoCLIP
+from .GeoCLIP import GeoCLIP
 from .image_encoder import ImageEncoder
 from .location_encoder import LocationEncoder
 from .locate import locate, image
