@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-import pandas as pd
 from tqdm import tqdm
 from geopy.distance import geodesic as GD
 

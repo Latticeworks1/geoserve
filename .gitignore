@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# C extensions
+*.so
